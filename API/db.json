@@ -1,0 +1,35 @@
+{
+    "users":[
+        {
+            "name":"Durjoy",
+            "age":23,
+            "email":"durjoy15432@gmail.com"
+        },
+        {
+            "name":"abir",
+            "age":22,
+            "email":"abir15432@gmail.com"
+        },
+        {
+            "name":"rony",
+            "age":23,
+            "email":"rony15432@gmail.com"
+        },
+        {
+            "name":"shuvo",
+            "age":21,
+            "email":"shuvo15432@gmail.com"
+        },
+        {
+            "name":"benoy",
+            "age":23,
+            "email":"benoy15432@gmail.com"
+        },
+
+        {
+            "name":"hadi",
+            "age":23,
+            "email":"hadi15432@gmail.com"
+        }
+    ]
+}

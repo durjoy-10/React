@@ -1,0 +1,26 @@
+.heading{
+    color: rgb(14, 149, 187);
+    text-align: center;
+    text-shadow: rgb(34, 98, 148) 1px 1px 5px;
+}
+
+.img_style{
+    width: 200px;
+}
+
+.user_card{
+    margin: 10px;
+    width: 200px;
+    border: 1px solid rgb(16, 151, 208);
+    box-shadow: 1px 1px 5px 1px rgb(13, 104, 201) ;
+}
+
+.text_wrap{
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}

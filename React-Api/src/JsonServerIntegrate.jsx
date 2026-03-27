@@ -1,0 +1,54 @@
+import { useEffect, useState } from "react";
+
+export default function JsonServerIntegrate() {
+
+  const [userData, setUserData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    getUserData();
+  }, []);
+
+  const getUserData = async () => {
+    const url = "http://localhost:3000/users";
+    let response = await fetch(url);
+    response = await response.json();
+    
+    console.log(response);
+
+    setUserData(response); // ✅ FIX HERE
+    setLoading(false);
+  };
+
+  return (
+    <div>
+      <h1>Integrate JSON Server API and Loader</h1>
+
+      <ul className="user-list user-list-head">
+        <li>Name</li>
+        <li>Age</li>
+        <li>Email</li>
+      </ul>
+
+      {
+        !loading ?
+          userData.map((user) => (
+            <ul key={user.name} className="user-list">
+              <li>{user.name}</li> {/* better */}
+              <li>{user.age}</li>
+              <li>{user.email}</li>
+            </ul>
+          ))
+          : <h1>Data Loading...</h1>
+      }
+
+      <br /><br /><br /><br />
+
+      <hr /> <hr />
+
+      
+
+    </div>
+  );
+}

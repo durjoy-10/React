@@ -1,0 +1,25 @@
+.heading{
+    color: red;
+    text-align: center;
+}
+
+.img-style{
+    width: 200px;
+}
+
+.user-card{
+    margin: 10px;
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 1px rgb(177, 49, 49) ;
+}
+
+.text-warp{
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
